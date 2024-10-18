@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прайс - Мастер маникюра</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ff4081;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .price-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .price-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+        }
+        .price-item h3 {
+            color: #ff4081;
+            margin-bottom: 15px;
+        }
+        .price-item p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #ff4081;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <img src="logo.png" alt="Логотип салона">
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="services.html">Услуги</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- Контент -->
+    <main>
+        <h1>Прайс на услуги мастера маникюра</h1>
+        <div class="price-list">
+            <div class="price-item">
+                <h3>Классический маникюр</h3>
+                <p>Цена: 1200 руб.</p>
+            </div>
+            <div class="price-item">
+                <h3>Гелевое наращивание</h3>
+                <p>Цена: 2500 руб.</p>
+            </div>
+            <div class="price-item">
+                <h3>Шеллак</h3>
+                <p>Цена: 1500 руб.</p>
+            </div>
+            <div class="price-item">
+                <h3>Дизайн ногтей</h3>
+                <p>Цена: от 500 руб.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <p>&copy; 2024 Салон красоты. Все права защищены.</p>
+        <p>Контакты: <a href="tel:+79999999999">+7 (999) 999-99-99</a> | <a href="mailto:info@salon.com">info@salon.com</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салон красоты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        /* Шапка */
+        header {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header img {
+            width: 50px;
+            vertical-align: middle;
+        }
+        header nav {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        /* Основной контент */
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .container h2 {
+            color: #333;
+        }
+        .service {
+            margin: 20px;
+        }
+        .service a {
+            text-decoration: none;
+            color: white;
+            background-color: #ff4081;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .service a:hover {
+            background-color: #e6006e;
+        }
+        /* Подвал */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <img src="logo.png" alt="Логотип">
+        <nav>
+            <a href="#main">Главная</a>
+            <a href="#about">О нас</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <div class="container" id="main">
+        <h2>Наши услуги</h2>
+
+        <div class="service">
+            <h3>Маникюр</h3>
+            <a href="manicure_booking.html">Записаться на маникюр</a>
+        </div>
+
+        <div class="service">
+            <h3>Косметолог</h3>
+            <a href="cosmetologist_booking.html">Записаться к косметологу</a>
+        </div>
+
+        <div class="service">
+            <h3>Стрижка</h3>
+            <a href="haircut_booking.html">Записаться на стрижку</a>
+        </div>
+    </div>
+
+    <!-- О нас -->
+    <div class="container" id="about">
+        <h2>О нас</h2>
+        <p>Мы предлагаем высококачественные услуги по уходу за собой: от маникюра и косметологических процедур до профессиональных стрижек. Наши мастера – это опытные специалисты, которые всегда рады помочь вам выглядеть и чувствовать себя лучше!</p>
+    </div>
+
+    <!-- Контакты -->
+    <div class="container" id="contacts">
+        <h2>Контакты</h2>
+        <p>Наш адрес: ул. Примерная, д. 123, г. Москва</p>
+        <p>Телефон: +7 (123) 456-78-90</p>
+        <p>Email: info@beautysalon.ru</p>
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        <p>&copy; 2024 Салон красоты. Все права защищены.</p>
+        <p>Телефон: +7 (123) 456-78-90 | Email: info@beautysalon.ru</p>
+    </footer>
+
+</body>
+</html>
