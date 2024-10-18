@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подтверждение записи</title>
+    <link rel="stylesheet" href="confirmation.css">
+</head>
+
+<body>
+    <header>
+        <img src="glamour.png" alt="Логотип салона" class="logo">
+        <nav class="navbar">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="servicesEcat.html">Услуги</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="login.html">Личный кабинет</a>
+            <div class="username-display" id="usernameDisplay">
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        const loggedInUser = localStorage.getItem('loggedInUser');
+        if (loggedInUser) {
+            const userDisplay = document.createElement("span");
+            userDisplay.className = "username-display";
+            userDisplay.textContent = `Вы вошли как: ${loggedInUser}`;
+            document.getElementById("usernameDisplay").appendChild(userDisplay);
+        }
+    </script>
+
+    <main>
+        <div class="container">
+            <h2>Запись подтверждена!</h2>
+            <p id="confirmationMessage"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Салон красоты. Все права защищены.</p>
+        <p>Контакты: <a href="tel:+79999999999">+7 (999) 999-99-99</a> | <a href="mailto:info@salon.com">info@salon.com</a></p>
+    </footer>
+
+    <script src="confirmation.js"></script>
+</body>
+</html>
